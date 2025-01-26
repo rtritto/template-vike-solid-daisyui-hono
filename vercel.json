@@ -1,6 +1,16 @@
 {
   "outputDirectory": "dist/client",
   "devCommand": "vike dev",
+  "builds": [
+    {
+      "src": "dist/server/index.mjs",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/client/**/*",
+      "use": "@vercel/static"
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!assets/).*)",
