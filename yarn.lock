@@ -4844,13 +4844,10 @@ __metadata:
     tailwindcss: "npm:^3.4.17"
     typescript: "npm:^5.7.3"
     typescript-eslint: "npm:^8.21.0"
-    universal-autorouter: "npm:^0.2.6"
-    universal-autorouter-hono: "npm:^0.2.9"
     vike: "npm:^0.4.219"
     vike-node: "npm:^0.3.1"
     vike-solid: "npm:^0.7.8"
     vite: "npm:^6.0.11"
-    vite-plugin-build-routes: "npm:^0.2.1"
   languageName: unknown
   linkType: soft
 
@@ -5101,28 +5098,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"universal-autorouter-hono@npm:^0.2.9":
-  version: 0.2.9
-  resolution: "universal-autorouter-hono@npm:0.2.9"
-  peerDependencies:
-    hono: "*"
-    universal-autorouter: "*"
-  checksum: 10c0/9e8f1757cd9c7eaa6bca0a35a5a3acfc916050d4d771df8caa5bc57337eb90e1a88432ed57a7f6f7f39191447b049ece0b586639ccfdf83382aa7edb1f2cbde4
-  languageName: node
-  linkType: hard
-
-"universal-autorouter@npm:^0.2.6":
-  version: 0.2.6
-  resolution: "universal-autorouter@npm:0.2.6"
-  peerDependencies:
-    vite: "*"
-  peerDependenciesMeta:
-    vite:
-      optional: true
-  checksum: 10c0/63771ab54b9245bb96520f991a3716706e9289c44a7ffb29c80afa1f1500e21d530f8f36d4551fe59b1ac03722dc04e0fec56277d0303109fbf458f22ab36d46
-  languageName: node
-  linkType: hard
-
 "update-browserslist-db@npm:^1.1.0":
   version: 1.1.1
   resolution: "update-browserslist-db@npm:1.1.1"
@@ -5240,15 +5215,6 @@ __metadata:
   bin:
     vike: node/cli/bin.js
   checksum: 10c0/abac9fb9c1c559d38db0be2669a10dff4a2c5b475c249f3ca98b1986acf62d46426dd8eeafb14f519d6161a354fa3432b4fcd25297144664ed4d365f68460bc9
-  languageName: node
-  linkType: hard
-
-"vite-plugin-build-routes@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "vite-plugin-build-routes@npm:0.2.1"
-  peerDependencies:
-    vite: "*"
-  checksum: 10c0/af8b3eb737d16bfdb396ed21d75ea684b3ba877a192701780a69bde70d89f988ce7d34a7d1de3ab08082268a3cdeb881068c0bb1302b6bfd663b5c052e991009
   languageName: node
   linkType: hard
 
