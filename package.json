@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vike dev",
     "build": "vike build",
+    "start": "NODE_ENV=production node dist/server/index.mjs",
     "prod": "NODE_ENV=production node dist/server/index.mjs",
+    "preview": "NODE_ENV=production node dist/server/index.mjs",
     "serve": "yarn build && yarn prod",
     "lint": "eslint src/**/*.{ts,tsx} *.ts",
     "od": "yarn outdated"
