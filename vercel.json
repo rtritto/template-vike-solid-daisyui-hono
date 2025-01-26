@@ -1,5 +1,6 @@
 {
   "outputDirectory": "dist/client",
+  "devCommand": "vike dev",
   "rewrites": [
     {
       "source": "/((?!assets/).*)",
