@@ -1,6 +1,5 @@
-import { connectToWeb } from 'vike-node'
+import app from '../dist/server/index.mjs'
 
-const handler = connectToWeb(app)
-
-export const GET = handler
-export const POST = handler
+export const runtime = 'nodejs'
+export const GET = app.fetch
+export const POST = app.fetch
