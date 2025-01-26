@@ -1,13 +1,11 @@
 import pluginTypescript from 'typescript-eslint'
 import pluginUnicorn from 'eslint-plugin-unicorn'
 import pluginSolid from 'eslint-plugin-solid/configs/typescript'
-import pluginTailwindcss from 'eslint-plugin-tailwindcss'
 
 export default pluginTypescript.config(
   ...pluginTypescript.configs.recommended,
   pluginUnicorn.configs['flat/recommended'],
   pluginSolid,
-  ...pluginTailwindcss.configs['flat/recommended'],
   {
     rules: {
       'comma-dangle': [1, 'never'],
@@ -23,11 +21,7 @@ export default pluginTypescript.config(
       'unicorn/no-null': 0,
       'unicorn/numeric-separators-style': 0,
       'unicorn/prefer-node-protocol': 0,
-      'unicorn/prevent-abbreviations': 0,
-
-      'tailwindcss/no-custom-classname': [1, {
-        whitelist: ['is-active']
-      }]
+      'unicorn/prevent-abbreviations': 0
     }
   }
 )
