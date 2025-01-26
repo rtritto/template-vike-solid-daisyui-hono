@@ -1,20 +1,15 @@
 {
   "outputDirectory": "dist/client",
   "devCommand": "vike dev",
-  "builds": [
-    {
-      "src": "dist/server/index.mjs",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "dist/client/**/*",
-      "use": "@vercel/static"
-    }
-  ],
   "rewrites": [
     {
       "source": "/((?!assets/).*)",
       "destination": "/api/vercel-entry.js"
     }
-  ]
+  ],
+  "functions": {
+    "api/vercel-entry.js": {
+      "includeFiles": "dist/server/**"
+    }
+  }
 }
