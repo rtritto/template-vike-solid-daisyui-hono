@@ -4,7 +4,7 @@ import vike from 'vike-node/hono'
 
 const app = new Hono()
 
-app.get('/hello', (c) => {
+app.get('/api/hello', (c) => {
   return c.json({
     message: 'Hello!'
   })
