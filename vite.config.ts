@@ -12,7 +12,7 @@ export default {
   plugins: [
     vike(),
     vikeSolid(),
-    vikeNode('server/index.ts')
+    vikeNode(process.env.NODE_ENV === 'production' ? 'server/index.ts' : 'server/entry.node.ts')
   ],
   server: {
     port: 3000
