@@ -8,7 +8,7 @@ export default {
   root: 'src',
   cacheDir: '../.vite',
   plugins: [
-    vike({ prerender: true }),
+    vike(),
     vikeSolid(),
     vikeNode(process.env.NODE_ENV === 'production' ? 'server/index.ts' : 'server/entry.node.ts')
   ],
