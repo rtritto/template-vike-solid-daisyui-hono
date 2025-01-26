@@ -19,7 +19,6 @@
   "devDependencies": {
     "@hono/node-server": "^1.13.7",
     "@types/node": "^22.10.10",
-    "@vercel/node": "^5.0.2",
     "@yarnpkg/sdks": "^3.2.0",
     "typescript": "^5.7.3",
     "vike": "^0.4.219",
