@@ -19,6 +19,7 @@
   "devDependencies": {
     "@hono/node-server": "^1.13.7",
     "@types/node": "^22.10.10",
+    "@vercel/node": "^5.0.2",
     "@yarnpkg/sdks": "^3.2.0",
     "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.23",
